@@ -1,0 +1,31 @@
+{
+  "name": "@juwel-development/beautiful-logger",
+  "version": "0.0.0-development",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/es/src/index.d.ts",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c",
+    "lint": "eslint . --ext .ts,.tsx",
+    "start": "rollup -c -w",
+    "release": "semantic-release",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^11.1.6",
+    "rollup": "^4.17.2",
+    "rollup-plugin-typescript2": "^0.36.0",
+    "typescript": "^5.0.0",
+    "semantic-release": "^23.1.1"
+  },
+  "keywords": [
+    "logging",
+    "console"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juwel-development/LIB-beautiful-logger.git"
+  }
+}
