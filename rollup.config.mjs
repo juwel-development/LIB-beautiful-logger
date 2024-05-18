@@ -1,5 +1,5 @@
 import typescript from 'rollup-plugin-typescript2'
-import pkg from './package.json' assert { type: "json" };
+import pkg from './package.json' with {type : 'json' }
 
 export default {
   input: 'src/index.ts',
@@ -14,7 +14,6 @@ export default {
       file: pkg.module,
       format: 'es',
       sourcemap: true,
-
     },
   ],
   external: ['react', 'rxjs'],
